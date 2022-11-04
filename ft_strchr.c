@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 22:39:37 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/10/31 17:26:43 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 12:03:50 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s != '\0' && *s != c)
+	while (*s != '\0' && *s != (char)c)
 		s++;
-	if (c == *s)
+	if ((char)c == *s)
 		return ((char *)s);
 	else
 		return (0);

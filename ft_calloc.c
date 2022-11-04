@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:30:57 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/10/24 18:07:18 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 16:41:19 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*i;
+	void	*ptr;
 
-	if (count != 0)
-		if ((size_t)(-1) / count < size)
-			return (NULL);
-	i = malloc(count * size);
-	if (!i)
+	if (count != 0 && (size_t)-1 / count < size)
 		return (NULL);
-	ft_bzero(i, count * size);
-	return (i);
+	ptr = malloc(count * size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, count * size);
+	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 22:43:13 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/10/17 17:51:14 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 16:48:20 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	// int x = 0b00000000 00000000 00000101 00111001;
+// 	int x = 0b00000000000000000000010100111001;
+// 	printf("%p\n", ft_memchr(&x, 0, 4));
+// 	printf("%p\n", &x);
+// }

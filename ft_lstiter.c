@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 19:53:11 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/11/01 19:59:47 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/02 12:00:33 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	while (lst)
 	{
 		f(lst->content);
-		lst = lst->content;
+		lst = lst->next;
 	}
 }

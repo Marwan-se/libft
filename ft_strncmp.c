@@ -6,11 +6,11 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 00:37:17 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/10/17 17:52:16 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 08:40:37 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

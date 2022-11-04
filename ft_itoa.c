@@ -6,15 +6,13 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 10:19:11 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/10/24 16:28:49 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 15:07:52 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//A static function in C is a function that /
-//has a scope that is limited to its object file
-
+//to check the size of the int
 static size_t	ft_intsize(long nb)
 {
 	size_t	i;

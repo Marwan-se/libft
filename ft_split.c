@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:41:00 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/11/01 09:29:18 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/03 16:52:12 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static char	*ft_mem_word(char const *s, char c)
 
 static char	**ft_free( char **tab, int i)
 {
-	while (i > 0)
+	while (i >= 0)
 		free(tab[i--]);
 	free(tab);
 	return (NULL);
@@ -70,7 +70,7 @@ static char	**ft_fixn(char const *s, char c)
 		while (s[0] == c)
 			s++;
 		tab[i] = ft_mem_word(s, c);
-		if (!tab)
+		if (!tab[i])
 		{
 			return (ft_free(tab, i));
 		}
