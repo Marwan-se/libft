@@ -6,7 +6,7 @@
 /*   By: msekhsou <msekhsou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 09:28:15 by msekhsou          #+#    #+#             */
-/*   Updated: 2022/11/03 21:12:25 by msekhsou         ###   ########.fr       */
+/*   Updated: 2022/11/04 10:36:48 by msekhsou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,17 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (newlst);
 }
 
-void	*fun(void *node)
-{
-	node = ft_strdup("012");
-	return (node);
-}
+// void	*fun(void *node)
+// {
+// 	node = ft_strdup("012");
+// 	return (node);
+// }
 
-void	del(void *node)
-{
-	free (node);
-}
-
+// void	del(void *node)
+// {
+// 	free (node);
+// }
+// 
 // int	main(void)
 // {
 // 	t_list *tmp;
